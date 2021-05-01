@@ -1,0 +1,26 @@
+.BottonRightImage{
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100px;
+    transition: 0.5s all;
+}
+
+/* Medium devices (landscape tablets, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .BottonRightImage {
+        width: 180px;        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 800px) {
+    .BottonRightImage {
+        width: 250px;        
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

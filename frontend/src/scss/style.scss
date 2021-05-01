@@ -1,0 +1,22 @@
+@import "variables";
+@import "inputs.scss";
+@import "buttons.scss";
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+html,
+body{
+    background: $main-color;
+    height: 100%;
+    overflow: hidden;
+    // font-size: 1rem;
+    font-family: $main-font-family;
+}
+

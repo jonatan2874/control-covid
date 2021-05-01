@@ -1,0 +1,37 @@
+input[type="text"], select {
+    padding: 14px 30px;
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 0.5px;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 100%;
+    border-radius: 35px;
+    transition: 0.5s all;
+
+}
+
+input[type="text"]:focus, select:focus {
+    border: 1px solid #e1e1e1;
+}
+
+/* Medium devices (landscape tablets, 600px and up) */
+@media only screen and (min-width: 600px) {
+    input[type="text"],select {
+        width: 60%;        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 800px) {
+    input[type="text"],select {
+        width: 350px;        
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

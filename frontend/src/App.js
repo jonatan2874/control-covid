@@ -1,9 +1,10 @@
 import './scss/style.scss';
-import {CovidForm} from './forms/covid-control/Covid'
+import {Form} from './forms/covid-control/Form'
+
 function App() {
   return (
     <>
-      <CovidForm></CovidForm>
+      <Form/>
     </>
   );
 }

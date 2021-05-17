@@ -15,12 +15,22 @@ class People extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('document_type_id');
             $table->string('document_number');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('phone');
             $table->string('email');
             $table->timestamps();
+
+
+        });
+
+        Schema::table('people', function(Blueprint $table)
+        {
+            $table->foreign('document_type_id')
+                    ->references('id')
+                    ->on('people_document_types');
         });
     }
 
@@ -31,6 +41,6 @@ class People extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('people');
     }
 }

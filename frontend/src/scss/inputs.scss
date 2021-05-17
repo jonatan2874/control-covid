@@ -10,11 +10,24 @@ input[type="text"], select {
     width: 100%;
     border-radius: 35px;
     transition: 0.5s all;
-
 }
 
 input[type="text"]:focus, select:focus {
     border: 1px solid #e1e1e1;
+}
+
+input[type="checkbox"], select {
+    padding: 14px 30px;
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 0.5px;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 100%;
+    border-radius: 35px;
+    transition: 0.5s all;
 }
 
 /* Medium devices (landscape tablets, 600px and up) */

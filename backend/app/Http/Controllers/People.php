@@ -21,6 +21,13 @@ class People extends Controller
         return $person;
     }
 
+    public static function getPersonByDoc($type,$document){
+        $person = PeopleModel::where('document_type_id','=',$type)
+                                ->where('document_number','=', $document)
+                                ->get();
+        return $person;
+    }
+
     public static function store(Request $request){
         $person = new PeopleModel;
         $person->document_number = $request->document_number;
